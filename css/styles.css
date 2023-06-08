@@ -31,6 +31,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc ;
 }
 
 .header-logo {
@@ -42,6 +43,7 @@ p, h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--links);
+    margin-right: 76px;
 }
 
 
@@ -54,6 +56,7 @@ p, h1,h2,h3,h4,h5,h6 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    margin-right: 76px;
    }
    
     .link {
@@ -93,7 +96,8 @@ p, h1,h2,h3,h4,h5,h6 {
         display: flex;
         margin-left: 76px;
         gap: 40px;
-        
+        padding-top: 24px;
+        padding-bottom: 24px;
         
     }
     .header-menu-link {
@@ -147,7 +151,8 @@ p, h1,h2,h3,h4,h5,h6 {
 /*------HERO----*/
     .hero {
         background: var(--title-color);
-       
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
     .hero-cont {
         padding-top: 188px;
@@ -188,7 +193,18 @@ p, h1,h2,h3,h4,h5,h6 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        display: block;
+        min-width: 169px;
 
+    }
+    .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
     }
     .hero-btn:hover, .hero-btn:focus {
     background: var(--hover-link);
@@ -250,10 +266,13 @@ p, h1,h2,h3,h4,h5,h6 {
         .products-title {
         margin-bottom: 72px;
         }
+        .product-images-list {    
+        width: calc((100% - 48px) / 3);
+        }
         .images {
             display: flex;
             gap: 24px;
-            width: calc((100% - 48px) /3);
+           
         }
 
     /*-----TEAM----*/
@@ -295,15 +314,14 @@ p, h1,h2,h3,h4,h5,h6 {
                 padding-left: 0;
                 
             }
-        
+            .sub-text-names {
+                padding: 32px 16px;
+            }
             .team-item {
                 background: var(--main-text-color);
                 width: calc((100% - 24px*3) / 4);
                 border-radius: 0px 0px 4px 4px;
                 
-                
-
-
             }
 
 /*----FOOTER---*/
@@ -322,6 +340,8 @@ p, h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.03em;
     color: var(--links);
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
    
 }
    
@@ -348,17 +368,20 @@ p, h1,h2,h3,h4,h5,h6 {
         margin-top: 16px;
 }
 
-.portfolio {}
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 .portfolio-btn-list {
     display: flex;
-    padding-top: 96px;
     padding-bottom: 72px;
     padding-left: 271px;
     padding-right: 271px;
     gap: 24px;
     text-align: center;
-    
+    justify-content: center;
+    margin-bottom: 72px;
     
 }
 
@@ -377,7 +400,7 @@ p, h1,h2,h3,h4,h5,h6 {
     margin-right: auto;
     padding: 12px 24px ;
     border-radius: 4px;
-    
+    border: 1px solid #e7e9fc;
 
     
 }
@@ -388,6 +411,7 @@ p, h1,h2,h3,h4,h5,h6 {
     flex-direction: row;
     gap: 24px;
     padding-bottom: 120px;
+    row-gap: 48px;
    
     
 }
@@ -397,16 +421,21 @@ p, h1,h2,h3,h4,h5,h6 {
     max-width: 360px;
 
 }
-
+.portf-cont-names {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
 .portfolio-subtitle {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 color: var(--title-color);
 letter-spacing: 0.02em;
-padding-top: 32px;
+
 padding-bottom: 8px;
-padding-left: 16px;
+
 }
 
 .portfolio-text {
@@ -416,7 +445,7 @@ padding-left: 16px;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
     margin-bottom: 32px;
-    padding-left: 16px;
+    
 }
 .portf-btn {
     font-family: "Roboto", sans-serif;
@@ -434,8 +463,10 @@ padding-left: 16px;
 .portf-btn:hover {
 background: var(--hover-link);
 color: var(--main-text-color);
+border: 1px solid transparent;
 }
 .portf-btn:focus {
     color: var(--main-text-color);
     background: var(--hover-link);
+    border: 1px solid transparent;
 }
