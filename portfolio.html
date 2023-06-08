@@ -10,31 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <title>WEB STUDIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="header-navigation">
-            <a href="./index.html" class="header-logo link">Web<span class="studio">Studio</span></a>
-            <ul class="list">
-                <li class="header-menu-item"><a href="./index.html" class="header-menu-link link">Studio</a></li>
-                <li class="header-menu-item"><a href="./portfolio.html" class="header-menu-link link">Portfolio</a></li>
-                <li class="header-menu-item"><a href="" class="header-menu-link link">Contacts</a></li>
-            </ul>
-        </nav>
-        <address class="address">
-            <ul class="header-social list">
-                <li class="header-social-iteam"><a class="header-social-link link"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="header-social-iteam"><a class="header-social-link link" href="tel:+110001111111">+11 (000)
-                        111-11-11</a></li>
-            </ul>
-        </address>
+        <div class="container header-cont">
+            <nav class="header-navigation">
+                <a href="./index.html" class="header-logo link">Web<span class="studio">Studio</span></a>
+                <ul class="header-menu list">
+                    <li class="header-menu-item"><a href="./index.html" class="header-menu-link link">Studio</a></li>
+                    <li class="header-menu-item"><a href="./portfolio.html" class="header-menu-link link">Portfolio</a></li>
+                    <li class="header-menu-item"><a href="" class="header-menu-link link">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="address">
+                <ul class="header-social list">
+                    <li class="header-social-iteam"><a class="header-social-link link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="header-social-iteam"><a class="header-social-link link" href="tel:+110001111111">+11 (000)
+                            111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
     </header>
-
     <main>
         <section class="portfolio">
+        <div class="container">
         <h1 hidden>All</h1>
         <ul class="portfolio-btn-list list">
             <li class="portfolio-btn-item">
@@ -124,6 +129,7 @@
             </a>
         </li>
         </ul>
+        </div>
         </section>
     
 
@@ -131,10 +137,12 @@
     </main>
 
     <footer id="footer" class="footer">
+    <div class="container">
     <a href="./index.html" class="footer-logo link">Web<span class="studio-footer">Studio</span></a>
     <P class="footer-text">Increase the flow of customers and sales for your business with
         digital marketing & growth solutions.
     </P>
+    </div>
 </footer>
 </body>
 
