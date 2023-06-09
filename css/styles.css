@@ -100,8 +100,7 @@ p, h1,h2,h3,h4,h5,h6 {
         
     }
     .header-menu-item {
-        padding-top: 24px;
-        padding-bottom: 24px;
+       
     }
     .header-menu-link {
         font-weight: 500;
@@ -123,6 +122,8 @@ p, h1,h2,h3,h4,h5,h6 {
     .header-cont {
         display: flex;
         align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
     .address {
         font-style: normal;
@@ -201,13 +202,17 @@ p, h1,h2,h3,h4,h5,h6 {
 
     }
     .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
     position: absolute;
-    white-space: nowrap;
     width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
     }
     .hero-btn:hover, .hero-btn:focus {
     background: var(--hover-link);
@@ -297,8 +302,7 @@ p, h1,h2,h3,h4,h5,h6 {
                 letter-spacing: 0.02em;
                 color: var(--title-color);
                 text-align: center;
-                margin-top: 32px;
-                margin-bottom: 8px;
+                
             }
 
             .team-text {
@@ -378,9 +382,6 @@ p, h1,h2,h3,h4,h5,h6 {
 
 .portfolio-btn-list {
     display: flex;
-    padding-bottom: 72px;
-    padding-left: 271px;
-    padding-right: 271px;
     gap: 24px;
     text-align: center;
     justify-content: center;
@@ -436,8 +437,7 @@ font-size: 20px;
 line-height: 1.2;
 color: var(--title-color);
 letter-spacing: 0.02em;
-
-padding-bottom: 8px;
+margin-bottom: 8px;
 
 }
 
