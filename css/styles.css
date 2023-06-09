@@ -85,7 +85,6 @@ p, h1,h2,h3,h4,h5,h6 {
     .container {
         width: 100%;
         max-width: 1158px;
-        padding: 0 15px 0 15px;
         margin-left: auto;
         margin-right: auto;
         /*outline: 2px solid red;*/
@@ -95,15 +94,14 @@ p, h1,h2,h3,h4,h5,h6 {
         display: flex;
         margin-left: 76px;
         gap: 40px;
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding: 24px 0 24px 0;
         
         
     }
     .header-menu-item {
     padding-top: 24px;
     padding-bottom: 24px;
-        )
+        
     }
     .header-menu-link {
         font-weight: 500;
