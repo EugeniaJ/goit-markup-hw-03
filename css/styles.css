@@ -43,8 +43,7 @@ p, h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     color: var(--links);
     margin-right: 76px;
-    padding: 24px 0;
-    display: block;
+    
     
 }
 
@@ -58,9 +57,7 @@ p, h1,h2,h3,h4,h5,h6 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    padding: 24px 0;
-    display: block;
-
+    
    }
    
     .link {
@@ -121,6 +118,8 @@ p, h1,h2,h3,h4,h5,h6 {
         display: flex;
         align-items: center;
         flex-grow: 1;
+        padding: 24px 0;
+        display: block;
         
     }
     .header-cont {
