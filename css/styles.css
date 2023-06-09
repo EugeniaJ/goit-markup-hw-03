@@ -96,6 +96,7 @@ p, h1,h2,h3,h4,h5,h6 {
     .header-menu {
         display: flex;
         gap: 40px;
+        padding: 0 24px 0 24px;
         
         
         
@@ -118,7 +119,7 @@ p, h1,h2,h3,h4,h5,h6 {
         display: flex;
         align-items: center;
         flex-grow: 1;
-        padding: 24px 0;
+       
         display: block;
         
     }
