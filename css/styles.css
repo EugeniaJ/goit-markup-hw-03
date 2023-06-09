@@ -418,19 +418,18 @@ p, h1,h2,h3,h4,h5,h6 {
     gap: 24px;
     padding-bottom: 120px;
     row-gap: 48px;
-   
+    width: calc((100% - 48px) / 3);
     
 }
 
 .portfolio-img-item {
-    border: 1px solid #E7E9FC;
     max-width: 360px;
-    width: calc((100% - 48px) / 3);
+    
 
 }
 .portf-cont-names {
     padding: 32px 16px;
-    
+    border: 1px solid #e7e9fc;
     border-top: none;
     margin-bottom: 8px;
 }
