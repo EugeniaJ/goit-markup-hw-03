@@ -58,8 +58,9 @@ p, h1,h2,h3,h4,h5,h6 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 0;
+    display: block;
+
    }
    
     .link {
@@ -90,7 +91,8 @@ p, h1,h2,h3,h4,h5,h6 {
         max-width: 1158px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0 15px;
+        padding: 0 15px 0 15px;
+
         /*outline: 2px solid red;*/
     }
 
