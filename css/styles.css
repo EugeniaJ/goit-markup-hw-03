@@ -113,11 +113,13 @@ p, h1,h2,h3,h4,h5,h6 {
         display: block;
         padding-top: 24px;
         padding-bottom: 24px;
+        transition: color 250ms cubic-bezier(o.4, 0, 0.2, 1);
     }
         
     
     .header-menu-link:hover, .header-menu-link:focus {
       color: var(--hover-link);
+      
       
     }
     .header-navigation {
