@@ -31,6 +31,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .header {
     
     border-bottom: 1px solid #e7e9fc ;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-logo {
@@ -43,7 +44,8 @@ p, h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     color: var(--links);
     margin-right: 76px;
-    
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -57,7 +59,7 @@ p, h1,h2,h3,h4,h5,h6 {
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    
+    max-width: 1440px;
    }
    
     .link {
@@ -114,6 +116,7 @@ p, h1,h2,h3,h4,h5,h6 {
         padding-top: 24px;
         padding-bottom: 24px;
         transition: color 250ms cubic-bezier(o.4, 0, 0.2, 1);
+
     }
         
     .current{
@@ -129,6 +132,7 @@ p, h1,h2,h3,h4,h5,h6 {
         background-color: #404BBF;
         position: absolute;
         border-radius: 2px;
+        bottom: -1px;
     }
     .header-menu-link:hover, .header-menu-link:focus {
       color: var(--hover-link);
@@ -228,6 +232,7 @@ p, h1,h2,h3,h4,h5,h6 {
         justify-content: center;
         display: block;
         min-width: 169px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 
     }
     .visually-hidden {
@@ -366,7 +371,25 @@ p, h1,h2,h3,h4,h5,h6 {
                 display: block;
                 
             }
-
+            .icons-site-link {
+                border-radius: 50%;
+                background: #4D5AE5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                    
+                
+            }
+            .soc-icon-s {
+                width: 16px;
+                height: 13px;
+            }
+            
+            .icons-soc-gen {
+              
+            }
 
 /*----customers----*/
 
@@ -450,9 +473,26 @@ display: flex;
 gap: 24px; 
 justify-content: center;
 }
+.icons-site-link-f {
+    border-radius: 50%;
+    background: #4D5AE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+        .soc-icon-s-f {
+            width: 24px;
+            height: 24px;
+            fill: #F4F4FD;
+                
+        }
+.gen-soc-f {
+    display: flex;
+    gap: 16px;
 
-    
-
+}
 .soc-media-text {
     font-weight: 500;
     font-size: 16px;
@@ -556,7 +596,7 @@ justify-content: center;
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
+    
     
 }
 .overlay {
@@ -644,10 +684,12 @@ border: 1px solid transparent;
     border-radius: 50%;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 24px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
     
 }
 .btn-close {
