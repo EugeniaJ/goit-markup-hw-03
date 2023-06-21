@@ -435,7 +435,7 @@ p, h1,h2,h3,h4,h5,h6 {
 .customer-item {
     border: 1px solid #8E8F99;
     border-radius: 4px;
-  
+    height: 88px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: calc((100% - 120px) / 6);
@@ -451,7 +451,8 @@ fill: currentColor;
 }
 
 .customer-company-link {
-    height: 88px;
+    width: 100%;
+    height: 100%;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     display: flex;
@@ -512,18 +513,17 @@ fill: currentColor;
 
    
 .footer-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--light-white);
-        width: 264px;
-        margin-top: 16px;
-        max-width: 264px;
-        line-height: 1.5;
-        
-        
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--light-white);
+    width: 264px;
+    margin-top: 16px;
+    max-width: 264px;
+    line-height: 1.5; 
 }
+
 .footer-cont {
     display: flex;
     align-items: baseline;
@@ -809,9 +809,10 @@ border: none;
 .btn-close:focus {
     fill: #ffffff;
 }
+
 .btn-close:hover {
     fill: #ffffff;
-    }
+}
 
 
 
