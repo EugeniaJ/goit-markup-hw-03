@@ -562,10 +562,11 @@ justify-content: center;
 .soc-media-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     margin-bottom: 16px;
+    
 }
    
 .contact-icon {
@@ -798,22 +799,22 @@ border: none;
     background-color: #404bbf;
     border: none;
 }
+
+
+
+.modal-btn:hover .btn-close,
+.modal-btn:focus .btn-close {
+    fill: #FFFFFF ;
+}
+
+
 .btn-close {
     color: #2E2F42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn-close:focus {
-    fill: #ffffff;
-}
-
-.btn-close:hover {
-    fill: #ffffff;
-}
-
-
 
 .is-hidden {
     visibility: hidden;
