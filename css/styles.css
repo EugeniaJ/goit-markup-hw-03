@@ -437,7 +437,7 @@ p, h1,h2,h3,h4,h5,h6 {
     border-radius: 4px;
     height: 88px;
    
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
     width: calc((100% - 120px) / 6);
 }
 
@@ -809,11 +809,7 @@ border: none;
 
 
 .btn-close {
-    color: #2E2F42;
-    
-    padding: 0;
-    cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
